@@ -1,10 +1,13 @@
 .center {
 display: block;
-margin: auto;
+margin: 12.5vh auto;
+height: 75vh;
+width: auto;
 }
 
 body {
 background-color: black;
+overflow: none;
 height: 100%;
-wight: auto;
+width: 100%;
 }
