@@ -1,23 +1,21 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.center {
+img {
   width: 100vmin;
   height: auto;
-    
+  
   display: block;
   margin: auto;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-body {
+body, html {
   background-color: black;
   overflow: hidden;
   width: 100%;
