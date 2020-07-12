@@ -1,13 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
 .center {
+  width: 100vmin;
+  height: auto;
+    
   display: block;
-  margin: 12.5vh auto;
-  height: 75vh;
-  width: auto;
+  margin: auto;
 }
 
 body {
   background-color: black;
   overflow: hidden;
-  height: 100%;
-  width: 100%;
 }
