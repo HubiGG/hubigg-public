@@ -137,22 +137,23 @@ h4 {
 /* links */
 
 .social {
-    width: 3.2em;
-    height: 3.2em;
+    width: 3.6em;
+    height: 3.6em;
     float: right;
 }
 
 .social:hover {
     opacity: 0.75;
-    width: 3em;
-    height: 3em;
+    width: 3.4em;
+    height: 3.4em;
     padding: 0.1em;
 }
 
 #links {
     position: static;
-    width: 16em;
-    margin-left: calc(100% - 16em);
+    width: 18em;
+    max-width: calc(100% - 4em);
+    margin-left: calc(100% - 18em);
 }
 
 #links a:first-child img {
@@ -227,5 +228,11 @@ h4 {
     }
     .landscape {
         display: none;
+    }
+}
+
+@media screen and (max-width: 22em) {
+    #links {
+        margin-left: 4rem;
     }
 }

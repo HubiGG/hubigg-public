@@ -16,7 +16,7 @@
 
 #aboutContent {
     margin: 2rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: inline-block;
     width: calc(100% - 4rem);
 }
@@ -100,5 +100,25 @@
     #aboutContent p {
         padding-right: 0.5rem;
         width: calc(100% - 1.25rem);
+    }
+}
+
+@media screen and (max-width: 22em) {
+    #mainHeader {
+        margin-left: 0;
+        width: 100%;
+    }
+    #mainHeader * {
+        text-align: center;
+    }
+    #mainHeader li {
+        width: 100%;
+    }
+    #mainHeader li:last-child {
+        width: calc(100% - 1rem);
+        margin-left: 0.5rem;
+    }
+    #aboutContent h3 {
+        text-align: center;
     }
 }
