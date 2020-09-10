@@ -22,7 +22,7 @@
 }
 
 #aboutContent p {
-    padding: 1.5rem;
+    padding: 1rem;
     background-image: linear-gradient(-45deg, #324a4e, #1C292B);
     border-radius: 0.75rem;
     font-size: 1.25rem;
@@ -91,10 +91,14 @@
         width: calc(100% - 2rem);
     }
     #aboutContent #aboutVideo {
-        width: calc(100vw - 8rem);
-        height: calc((100vw - 8rem) * 0.5625);
-        margin: 1rem;
+        width: calc(100vw - 6.25rem);
+        height: calc((100vw - 6.25rem) * 0.5625);
+        margin: 1rem 0.25rem;
         max-width: none;
         max-height: none;
+    }
+    #aboutContent p {
+        padding-right: 0.5rem;
+        width: calc(100% - 1.25rem);
     }
 }
