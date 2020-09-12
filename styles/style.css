@@ -68,15 +68,17 @@ h4 {
 /* button templates */
 
 .orange {
-    border-radius: 0.75rem;
+    display: block;
     width: 18rem;
     height: 2.75rem;
+    margin: auto;
+
+    outline: none;
+    border-radius: 0.75rem;
+
     font-size: 1.2rem;
     text-align: left;
     text-indent: 0.75rem;
-    outline: none;
-    display: block;
-    margin: auto;
     border-width: 0.25rem;
 }
 
@@ -102,20 +104,19 @@ h4 {
 
 #logo {
     display: block;
-    margin: auto;
     width: 100%;
+    margin: auto;
 }
 
 #sidebar {
+    position: fixed;
     width: 14em;
     height: 100%;
-    background-image: linear-gradient(-45deg, #324a4e, #1C292B);
-    /*background-color: #324a4e;*/
-    border-right: solid;
-    border-color: black;
-    position: fixed;
     left: 0;
     z-index: 1;
+    background-image: linear-gradient(-45deg, #324a4e, #1C292B);
+    border-right: solid;
+    border-color: black;
     overflow-y: auto;
     overflow-x: hidden;
     -ms-overflow-style: none;
@@ -143,10 +144,10 @@ h4 {
 }
 
 .social:hover {
-    opacity: 0.75;
     width: 3.4em;
     height: 3.4em;
     padding: 0.1em;
+    opacity: 0.75;
 }
 
 #links {
@@ -179,15 +180,15 @@ h4 {
 /* tournament contents */
 
 #tournament {
-    margin-left: 14em;
     width: calc(100% - 14em);
     max-height: 100%;
+    margin-left: 14em;
 }
 
 #timeFrame {
     margin: 8rem 1rem 0 1rem;
-    text-align: center;
     top: 8rem;
+    text-align: center;
 }
 
 /* other */
@@ -217,8 +218,8 @@ h4 {
         height: 3rem;
     }
     #tournament {
-        margin-left: 4rem;
         width: calc(100% - 4rem);
+        margin-left: 4rem;
     }
     .portrait {
         display: block;
