@@ -20,22 +20,27 @@
     <ul id="sidebar">
         <li><img id="logo" src="images/hubiPNG.png" draggable="false" alt="HubiGG"></li>
         <li>
-        <a href="tournaments.html">
-            <button class="orange">
-                <p class="landscape">Turnaukset</p>
-                <p class="portrait">&#127942;</p>
-            </button>
-        </a>
+            <a href="tournaments.html">
+                <button class="orange">
+                    <p class="landscape">Turnaukset</p>
+                    <p class="portrait">&#127942;</p>
+                </button>
+            </a>
         </li>
         <li>
-        <a href="/">
-            <button class="orange">
-                <p class="landscape">Tietoa meistä</p>
-                <p class="portrait">&#10068;</p>
-            </button>
-        </a>
+            <a href="/">
+                <button class="orange">
+                    <p class="landscape">Tietoa meistä</p>
+                    <p class="portrait">&#10068;</p>
+                </button>
+            </a>
         </li>
-    </ul> 
+        <li id="languages">
+            <div onclick="forceToFinnish()"><img src="images/fi.png" alt="fi"></img></div>
+            <h4>fi</h4>
+            <div onclick="forceToEnglish()"><img src="images/en.png" alt="en"></img></div>
+        </li>
+    </ul>
 
     <!-- social links -->
     <div id="links">
@@ -63,45 +68,24 @@
                 <h2>HubiGG</h2>
             </li>
             <li>
-                <h4>Suomalaista esports-toimintaa, CS:GO Turnauksia</h4>
+                <h4></h4>
             </li>
         </ul>
 
         <div id="aboutContent">
-            <div id="description">
-                <h3>Tietoa meistä</h3>
-                <p> Olemme ryhmä lukioikäisiä kavereita, joilla on aina ollut kova intohimo pelaamista ja e-urheilua
-                    kohtaan. <span style="color: #da6b44;">HubiGG</span> on itsenäisesti aloittamamme projekti, jonka parissa tavoitteenamme on sekä
-                    järjestää esports-turnauksia, että auttaa pelaajia löytämään uusia pelikavereita. Meidät tunnetaan
-                    parhaiten pienimuotoisten <span style="color: darkgoldenrod;">CS:GO</span> turnausten järjestämisestä, joihin käytetty raha ja produktio
-                    tulevat kokonaan omalta porukaltamme.<br><br>
-                    Aloitimme <span style="color: #da6b44;">HubiGG</span>:n perustamalla <a href="https://discord.gg/vZpC4fA" target="_blank" rel="noopener noreferrer">Discord</a> serverin, jonka tarkoituksena oli tuoda yhteisöömme pelaajia
-                    useista eri peleistä, auttaa heitä löytämään pelikavereita, sekä järjestää turnauksia joihin
-                    osallistua. Serveri kasvoikin yllättävän nopeasti, ja huomasimme varsinkin <span style="color: darkgoldenrod;">CS:GO</span> turnausten
-                    herättävän erityistä kiinnostusta. Pian päätimmekin keskittää serverimme toiminnan täysin <span style="color: darkgoldenrod;">CS:GO</span>:n
-                    ympärille.<br><br>
-                    Vaikka turnausten järjestäminen onkin hauskaa, on se lukion ohella silti varsin työlästä
-                    hommaa. Haluamme järjestää turnaukset omilla servereillämme taataksemme korkealaatuisen
-                    pelikokemuksen. Kesän aikana päätimmekin siis aloittaa omien nettisivujen rakentamisen helpottamaan
-                    servereiden operointia niin meille järjestäjille, kuin teille pelaajillekin. Sivumme ovat alusta
-                    loppuun itse tehdyt ilman ulkopuolista rahoitusta ja niiden ansiosta turnausten järjestäminen on
-                    lähes täysin automatisoitua, tästä hatunnosto meidän <i>IT-jäbille.</i> Nyt <span style="color: #da6b44;">HubiGG</span> on aivan uudella
-                    tasolla, emmekä malta odottaa, että pääsemme jälleen järjestämään aktiivisesti turnauksia teille
-                    pelaajille.</p>
-            </div>
+            <div id="description"></div>
 
             <div id="aboutVideo">
-                <iframe title="Esittelyvideo" width="100%" height="100%" src="https://www.youtube.com/embed/UdxNKR80I24" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                <iframe title="Esittelyvideo" width="100%" height="100%" src="https://www.youtube.com/embed/UdxNKR80I24"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
 
-            <div id="contacts">
-                <h3>Yhteistiedot</h3>
-                <p>hubigg.business@gmail.com</p>
-            </div>
+            <div id="contacts"></div>
         </div>
     </div>
+    <script src="scripts/lang.js"></script>
+    <script src="scripts/aboutLang.js"></script>
 </body>
 
 </html>

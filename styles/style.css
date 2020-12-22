@@ -197,6 +197,42 @@ h4 {
     display: none;
 }
 
+/* lang */
+
+#languages * {
+    width: 4rem;
+    height: 2.4rem;
+    text-align: center;
+    float: left;
+    padding: 0.5rem 0;
+}
+
+#languages div {
+    margin: 0 0.5rem;
+
+    cursor: pointer;
+    border-radius: 0.75rem;
+}
+
+#languages img {
+    width: calc(100% - 1.5rem);
+    height: auto;
+    margin: 0.45rem 0.75rem;
+    padding: 0;
+}
+
+#languages div:hover {
+    background-color: #1C292B;
+}
+
+#languages div:active {
+    box-shadow: inset 0 0 1rem black;
+}
+
+#languages h4 {
+    line-height: 1.5;
+}
+
 /* scaling */
 
 @media screen and (max-width: 65em) {
@@ -229,6 +265,11 @@ h4 {
     }
     .landscape {
         display: none;
+    }
+    #languages div, #languages h4 {
+        width: 3.5rem;
+        height: 2.1rem;
+        margin: 0 0.25rem;
     }
 }
 

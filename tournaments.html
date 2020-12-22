@@ -7,10 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/favicon.png" />
-    
+
     <title>HubiGG - Suomalaista esports-toimintaa, CS:GO Turnauksia</title>
-	<meta name= "description" content="HubiGG järjestää Suomessa CS:GO-turnauksia ja muuta esports-toimintaa.">
-    <meta name="keywords" content="hubigg, hubi, gg, fin, suomi, finland, cs, go, csgo, turnaus, turnaukset, tournament, hubigg.fi">
+    <meta name="description" content="HubiGG järjestää Suomessa CS:GO-turnauksia ja muuta esports-toimintaa.">
+    <meta name="keywords"
+        content="hubigg, hubi, gg, fin, suomi, finland, cs, go, csgo, turnaus, turnaukset, tournament, hubigg.fi">
 </head>
 
 <body>
@@ -18,22 +19,27 @@
     <ul id="sidebar">
         <li><img id="logo" src="images/hubiPNG.png" draggable="false" alt="HubiGG"></li>
         <li>
-        <a href="tournaments.html">
-            <button class="orange">
-                <p class="landscape">Turnaukset</p>
-                <p class="portrait">&#127942;</p>
-            </button>
-        </a>
+            <a href="tournaments.html">
+                <button class="orange">
+                    <p class="landscape">Turnaukset</p>
+                    <p class="portrait">&#127942;</p>
+                </button>
+            </a>
         </li>
         <li>
-        <a href="/">
-            <button class="orange">
-                <p class="landscape">Tietoa meistä</p>
-                <p class="portrait">&#10068;</p>
-            </button>
-        </a>
+            <a href="/">
+                <button class="orange">
+                    <p class="landscape">Tietoa meistä</p>
+                    <p class="portrait">&#10068;</p>
+                </button>
+            </a>
         </li>
-    </ul> 
+        <li id="languages">
+            <div onclick="forceToFinnish()"><img src="images/fi.png" alt="fi"></img></div>
+            <h4>fi</h4>
+            <div onclick="forceToEnglish()"><img src="images/en.png" alt="en"></img></div>
+        </li>
+    </ul>
 
     <!-- social links -->
     <div id="links">
@@ -55,7 +61,9 @@
     </div>
 
     <div id="tournament">
-        <h3 id="timeFrame">Seuraava turnaus pidetään tammikuussa.</h3>
+        <h3 id="timeFrame"></h3>
     </div>
+    <script src="scripts/lang.js"></script>
 </body>
+
 </html>
