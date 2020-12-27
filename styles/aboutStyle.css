@@ -46,8 +46,11 @@
 }
 
 #aboutContent h3 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0 1rem 0.5rem;
+}
+
+#aboutContent h4 {
+    margin: 2rem 0 0.5rem 0.5rem;
 }
 
 #aboutContent div {
