@@ -9,8 +9,8 @@ const aboutUsLang = {
 }
 
 const nextTournamentLang = {
-    fi: "Seuraava turnaus järjestetään tammikuussa.",
-    en: "The next tournament will be held in January."
+    fi: "HubiGG Winter Cupin ensimmäinen karsinta pidetään 15.1.<br><br> Ilmoittautuminen avautuu maanantaina 11.1. klo 18:00.",
+    en: "HubiGG Winter Cup's first qualifying round will be held on January 15th.<br><br> Sign up will open on Monday, January 11th at 18:00."
 }
 
 function forceToFinnish() {
@@ -53,7 +53,7 @@ function UpdateLang() {
     const timeFrameEl = document.getElementById("timeFrame");
 
     if (timeFrameEl != undefined) {
-        timeFrameEl.textContent = nextTournamentLang[lang];
+        timeFrameEl.innerHTML = nextTournamentLang[lang];
     }
 }
 
