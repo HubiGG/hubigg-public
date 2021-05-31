@@ -1,91 +1,193 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="fi">
 
 <head>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/aboutStyle.css">
+    <link rel="stylesheet" href="styles/newStyle.css">
+    <link rel="stylesheet" href="styles/docStyle.css">
+    <link rel="stylesheet" href="styles/homeStyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png">
 
     <title>HubiGG - Suomalaista esports-toimintaa, CS:GO Turnauksia</title>
-    <meta name="description" content="HubiGG järjestää Suomessa CS:GO-turnauksia ja muuta esports-toimintaa.">
+    <meta name="description" content="HubiGG järjestää CS:GO-turnauksia ja muuta esports-toimintaa. 
+    HubiGG hosts CS:GO-tournaments and other esports-activities.">
     <meta name="keywords"
         content="hubigg, hubi, gg, fin, suomi, finland, cs, go, csgo, turnaus, turnaukset, tournament, hubigg.fi">
 </head>
 
 <body>
-    <!-- navigation -->
-    <ul id="sidebar">
-        <li><img id="logo" src="images/hubiPNG.png" draggable="false" alt="HubiGG"></li>
-        <li>
-            <a href="tournaments.html">
-                <button class="orange">
-                    <p class="landscape">Turnaukset</p>
-                    <p class="portrait">&#127942;</p>
-                </button>
+    <!-- top navigation bar -->
+    <div id="navBg"></div>
+    <div id="navBlur"></div>
+    <nav>
+        <span>
+            <a href="index.html">
+                <img id="logo" src="images/hubiPNG.png" draggable="false" alt="HubiGG">
             </a>
-        </li>
-        <li>
-            <a href="/">
-                <button class="orange">
-                    <p class="landscape">Tietoa meistä</p>
-                    <p class="portrait">&#10068;</p>
-                </button>
-            </a>
-        </li>
-        <li id="languages">
-            <div onclick="forceToFinnish()"><img src="images/fi.png" alt="fi"></img></div>
-            <h4>fi</h4>
-            <div onclick="forceToEnglish()"><img src="images/en.png" alt="en"></img></div>
-        </li>
-    </ul>
-
-    <!-- social links -->
-    <div id="links">
-        <a href="https://discord.gg/vZpC4fA" target="_blank" rel="noopener noreferrer">
-            <img class="social" src="images/Discord-Logo-Color.svg" draggable="false" alt="Dscrd">
-        </a>
-        <a href="https://www.instagram.com/hubigg/" target="_blank" rel="noopener noreferrer">
-            <img class="social" src="images/IG_Glyph_Fill.png" draggable="false" alt="IG">
-        </a>
-        <a href="https://www.twitch.tv/hubiggfi" target="_blank" rel="noopener noreferrer">
-            <img class="social" src="images/TwitchGlitchPurple.svg" draggable="false" alt="Twch">
-        </a>
-        <a href="https://twitter.com/hubigg" target="_blank" rel="noopener noreferrer">
-            <img class="social" src="images/Twitter_Logo_Blue.svg" draggable="false" alt="Twtr">
-        </a>
-        <a href="https://www.youtube.com/channel/UCZjYss3LDeyiIw2q42JYpaQ" target="_blank" rel="noopener noreferrer">
-            <img class="social" src="images/youtube_social_icon.png" draggable="false" alt="YT">
-        </a>
-    </div>
-
-    <div id="tournament">
-        <!-- header -->
-        <ul id="mainHeader">
-            <li>
-                <h2>HubiGG</h2>
-            </li>
-            <li>
-                <h4></h4>
-            </li>
-        </ul>
-
-        <div id="aboutContent">
-            <div id="description"></div>
-
-            <div id="aboutVideo">
-                <iframe title="Esittelyvideo" width="100%" height="100%" src="https://www.youtube.com/embed/UdxNKR80I24"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div id="languages">
+                <img onclick="forceToFinnish()" src="images/fi.png" alt="fi"></img>
+                <p>fi</p>
+                <img onclick="forceToEnglish()" src=" images/en.png" alt="en"></img>
             </div>
+            <div id="search">
+                <input type="text" placeholder="Haku">
+            </div>
+        </span>
 
-            <div id="contacts"></div>
+        <span>
+            <div id="links">
+                <a href="index.html">Koti</a>
+                <a href="tournaments.html">Turnaukset</a>
+                <a href="services.html">Palvelut</a>
+            </div>
+        </span>
+
+        <a class="faqLink" href="faq.html">FAQ</a>
+    </nav>
+
+    <!-- header -->
+    <header>
+        <div>
+            <h1>HubiGG</h1>
+            <p>Suomalaista esports toimintaa ja turnauksia kaikille.</p>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <h2 id="welcome">Tervetuloa uusille sivuillemme</h2>
+
+        <section>
+            <!-- spotlight -->
+            <article id="spotlight">
+                <h3>Ajankohtaista</h3>
+                <img class="tourneyImg" src="images/headingBg.jpg" draggable="false" alt="HubiGG ? Cup">
+                <div id="tournamentDetails">
+                    <div id="tournamentLinks">
+                        <a href="/">
+                            <button class="greenBt" style="display: none;">Ilmoittaudu turnaukseen</button>
+                        </a>
+                        <a href="tournaments.html">
+                            <button class="greenBt">Turnaukset</button>
+                        </a>
+                        <a href="https://www.twitch.tv/hubiggfi">
+                            <button class="purpleBt">Katso turnausta</button>
+                        </a>
+                    </div>
+                    <div id="tournamentSponsor">
+                        <a href="https://instagram.com/AmphisGG">
+                            <img src="images/amphis.png" draggable="false" alt="Amphis Gaming ry">
+                        </a>
+                        <p>Sponsorina Amphis Gaming ry </p>
+                    </div>
+                </div>
+            </article>
+            <!-- other activity -->
+            <aside>
+                <article id="giveaway">
+                    <h3>Uutta!</h3>
+                    <img src="images/servicesNew.jpg" draggable="false" alt="">
+                    <a href="services.html">
+                        <button class="greenBt">Katso</button>
+                    </a>
+                </article>
+
+                <article id="news">
+                    <h3>Uutiset</h3>
+                    <img src="images/newsImg.jpg" draggable="false" alt="">
+                    <a href="https://twitter.com/HubiGG/status/1348649400931856385">
+                        <button class="greenBt">Katso uutiset</button>
+                    </a>
+                </article>
+            </aside>
+        </section>
+
+        <!-- social links -->
+        <div id="socials">
+            <h3>Ota somet haltuun</h3>
+
+            <a href="https://discord.gg/vZpC4fA" target="_blank" rel="noopener noreferrer">
+                <img src="images/Discord-Logo-Color.svg" draggable="false" alt="">
+                <p>Discord</p>
+            </a>
+
+            <a href="https://www.instagram.com/hubigg/" target="_blank" rel="noopener noreferrer">
+                <img src="images/IG_Glyph.svg" draggable="false" alt="">
+                <p>Instagram</p>
+            </a>
+
+            <a href="https://www.twitch.tv/hubiggfi" target="_blank" rel="noopener noreferrer">
+                <img src="images/TwitchGlitchPurple.svg" draggable="false" alt="">
+                <p>Twitch</p>
+            </a>
+
+            <a href="https://twitter.com/hubigg" target="_blank" rel="noopener noreferrer">
+                <img src="images/Twitter_Logo_Blue.svg" draggable="false" alt="">
+                <p>Twitter</p>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCZjYss3LDeyiIw2q42JYpaQ" target="_blank"
+                rel="noopener noreferrer">
+                <img src="images/youtube_social_icon.png" draggable="false" alt="">
+                <p>Youtube</p>
+            </a>
+            <a href="https://www.tiktok.com/@hubigg_fi" target="_blank" rel="noopener noreferrer">
+                <img src="images/tiktok.svg" draggable="false" alt="">
+                <p>TikTok</p>
+            </a>
+        </div>
+
+        <div id="about">
+            <h3>Tietoa meistä</h3>
+            <h4>Keitä olemme?</h4>
+            <p>
+                Olemme ryhmä lukioikäisiä kavereita, joilla on aina ollut kova intohimo pelaamista ja e-urheilua
+                kohtaan.
+                HubiGG on itsenäisesti aloittamamme projekti, jonka parissa tavoitteenamme on sekä järjestää
+                esports-turnauksia, että auttaa pelaajia löytämään uusia pelikavereita.
+                Meidät tunnetaan parhaiten pienimuotoisten CS:GO turnausten järjestämisestä, joihin käytetty raha ja
+                produktio tulevat kokonaan omalta porukaltamme.
+            </p>
+            <h4>Mistä HubiGG alkoi?</h4>
+            <p>
+                Aloitimme HubiGG:n perustamalla Discord serverin, jonka tarkoituksena oli tuoda yhteisöömme pelaajia
+                useista eri peleistä, auttaa heitä löytämään pelikavereita, sekä järjestää turnauksia joihin osallistua.
+                Serveri kasvoikin yllättävän nopeasti, ja huomasimme varsinkin CS:GO turnausten herättävän erityistä
+                kiinnostusta.
+                Pian päätimmekin keskittää serverimme toiminnan täysin CS:GO:n ympärille.
+            </p>
+            <h4>Mitä teemme?</h4>
+            <p>
+                Vaikka turnausten järjestäminen onkin hauskaa, on se lukion ohella silti varsin työlästä hommaa.
+                Haluamme järjestää turnaukset omilla servereillämme taataksemme korkealaatuisen pelikokemuksen.
+                Kesän aikana päätimmekin siis aloittaa omien nettisivujen rakentamisen helpottamaan servereiden
+                operointia niin meille järjestäjille, kuin teille pelaajillekin.
+                Sivumme ovat alusta loppuun itse tehdyt ilman ulkopuolista rahoitusta ja niiden ansiosta turnausten
+                järjestäminen on lähes täysin automatisoitua, tästä hatunnosto meidän IT-jäbille.
+                Nyt HubiGG on aivan uudella tasolla, emmekä malta odottaa, että pääsemme jälleen järjestämään
+                aktiivisesti turnauksia teille pelaajille.
+            </p>
+        </div>
+
+        <!-- footer with contacts & info-->
+        <footer>
+            <address id="contacts">
+                <h4>Ota yhteyttä:</h4>
+                <div>
+                    <img src="images/email-outline.svg" draggable="false" alt="email">
+                    <p>hubigg.business@gmail.com</p>
+                </div>
+            </address>
+            <div class="info">
+                <a href="privacy.html">Tietosuoja ja käyttöehdot</a>
+                <p>©2021 HUBIGG ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </main>
     <script src="scripts/lang.js"></script>
-    <script src="scripts/aboutLang.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/homeLang.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+main * {
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+section {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+section h3 {
+    text-transform: uppercase;
+}
+
+section p {
+    margin: 1.5rem 0;
+}
+
+section p em {
+    color: #eeba93;
+    font-style: normal;
+}
+
+section div {
+    display: inline-block;
+}
+
+section div article {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem 0;
+}
+
+section div article:first-of-type, section div article:nth-of-type(2) {
+    padding-right: 4rem;
+}
+
+section article span {
+    display: block;
+    color: #eeeeee;
+}
+
+section article span:first-of-type {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 45em) { 
+    section div article {
+        display: block;
+    }
+
+    section div article:first-of-type, section div article:nth-of-type(2) {
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <link rel="stylesheet" href="styles/newStyle.css">
+    <link rel="stylesheet" href="styles/docStyle.css">
+    <link rel="stylesheet" href="styles/faqStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <title>HubiGG - Suomalaista esports-toimintaa, CS:GO Turnauksia</title>
+    <meta name="description" content="HubiGG järjestää CS:GO-turnauksia ja muuta esports-toimintaa. 
+    HubiGG hosts CS:GO-tournaments and other esports-activities.">
+    <meta name="keywords"
+        content="hubigg, hubi, gg, fin, suomi, finland, cs, go, csgo, turnaus, turnaukset, tournament, hubigg.fi">
+</head>
+
+<body>
+    <!-- top navigation bar -->
+    <div id="navBg"></div>
+    <div id="navBlur"></div>
+    <nav>
+        <span>
+            <a href="index.html">
+                <img id="logo" src="images/hubiPNG.png" draggable="false" alt="HubiGG">
+            </a>
+            <div id="languages">
+                <img onclick="forceToFinnish()" src="images/fi.png" alt="fi"></img>
+                <p>fi</p>
+                <img onclick="forceToEnglish()" src=" images/en.png" alt="en"></img>
+            </div>
+            <div id="search">
+                <input type="text" placeholder="Haku">
+            </div>
+        </span>
+
+        <span>
+            <div id="links">
+                <a href="index.html">Koti</a>
+                <a href="tournaments.html">Turnaukset</a>
+                <a href="services.html">Palvelut</a>
+            </div>
+        </span>
+
+        <a class="faqLink" href="faq.html">FAQ</a>
+    </nav>
+
+    <!-- header -->
+    <header>
+        <div>
+            <h1>FAQ</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="faqContent">
+            <p><span>Q: Mitä <em>sininen</em> väri merkitsee pelaajalistassa?</span><br><br>A: Mikäli pelaajan väri on
+                listattu <em>sinisellä</em>, hänet on luokiteltu varapelaajaksi.</p>
+            <p><span>Q: Miten varapelaajat toimivat?</span><br><br>A: Ilmoittautuneet varapelaajat voivat tarvittaessa
+                pelata puuttuvan joukkueen jäsenen tilalla. Otteluissa pelaavat aina 5 ensimmäisenä palvelimelle
+                liittynyttä pelaajaa per joukkue.</p>
+            <p><span>Q: Kuinka monta pelaajaa varalle voi ilmoittautua?</span><br><br>A: 5:n ensimmäisen pelaajan
+                jälkeen loput joukkueeseen liittyvät katsotaan varapelaajiksi. Rajaa varapelaajien määrälle ei ole
+                asetettu.</p>
+            <p><span>Q: Tuli muuta menoa, miten perun osallistumisen?</span><br><br>A: Osallistumista ei tarvitse
+                erikseen perua, mutta joukkuetovereille kannattaa kyllä ilmoittaa. Turnausta edeltää noin tunnin
+                pituinen check-in vaihe, jolloin joukkueilta vaaditaan vielä erillinen vahvistus osallistumisesta. Jos
+                kukaan jäsenistä ei vahvista osallistumista, joukkue poistetaan.</p>
+            <p><span>Q: Miten poistan joukkueen?</span><br><br>A: Jos kukaan jäsenistä ei vahvista osallistumista
+                check-in vaiheessa, joukkue poistetaan automaattisesti.</p>
+            <p><span>Q: Joukkueessa on vähemmän kuin 5 pelaajaa, miten käy?</span><br><br>A: Joukkueet joissa on
+                vähemmän kuin 5 pelaajaa poistetaan check-in vaiheen alkaessa.</p>
+            <p><span>Q: Joukkueen luominen ei onnistu, mikä vikana?</span><br><br>A: Jokaisella joukkueella täytyy olla
+                uniikki nimi, joten tarkista listasta, onko haluamanne nimi mahdollisesti jo käytössä. Joukkueiden
+                nimissä ei myöskään saa esiintyä merkkiä ", ja pääsykoodin täytyy olla tasan 5:n merkin pituinen.</p>
+            <p><span>Q: Mikä on joukkueiden maksimimäärä turnauksessa?</span><br><br>A: Suurin joukkuemäärä jolla tällä
+                hetkellä pidämme turnauksia, on 16 joukkuetta.</p>
+            <p><span>Q: Mitä <em>sininen</em> väri ja <em>+</em> merkki tarkoittavat joukkuelistassa?</span><br><br>A:
+                Samoin kuin joukkueiden sisäisissä pelaaja listoissa, <em>sininen</em> väri merkitsee varajoukkuetta, ja
+                <em>+</em> merkki joukkuelaskurissa niiden määrää.
+            </p>
+            <p><span>Q: Mitä ovat 'varajoukkueet'?</span><br><br>A: Ensimmäisen 16 joukkueen jälkeen ilmoitetut
+                joukkueet ovat ns. 'varajoukkueita'. Varajoukkue pääsee pelaamaan turnauksessa, jos jokin ensimmäisistä
+                16: sta joukkueesta ei saa tarpeeksi pelaajia kasaan, tai ei vahvista osallistumistaan check-in
+                vaiheessa.</p>
+            <p><span>Q: Striimataanko pelejä?</span><br><br>A: Finaalit striimataan aina. Tämän lisäksi striimaamme
+                yleensä muutaman pelin lohkoista. Linkin Twitch-kanavallemme löydät sivun oikeasta yläkulmasta.</p>
+            <p><span>Q: Tarvitseeko minun luoda tallenne omasta näkökulmastani? Tai saako pelattujen pelien demoja omaan
+                    käyttööni turnauksen jälkeen?</span><br><br>A: Turnausjärjestäjä ei vaadi pelaajilta tallennetta
+                pelistä. Mutta jos haluat saada demon omaan henkilökohtaiseen käyttöösi, voit laittaa consoleen komennon
+                record "demon nimi". Lopettaaksesi demon tallentamisen, laita consoleen komento stop, tai lähde
+                pelistä.Tallenteet löytää pelin tiedostoista.</p>
+            <p><span>Q: Miten palkintorahat maksetaan voittajille?</span><br><br>A: Mahdolliset palkintorahat maksetaan
+                PayPalin kautta.</p>
+            <p>Mikäli jokin jäi epäselväksi, tai kaipaat apua ongelman kanssa, ota meihin yhteyttä <em>Discord</em>
+                kanavallamme, linkki etusivulla.</p>
+        </div>
+
+        <footer>
+            <div class="info">
+                <a href="privacy.html">Tietosuoja ja käyttöehdot</a>
+                <p>©2021 HUBIGG ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </main>
+    <script src="scripts/lang.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/faqLang.js"></script>
+
+</body>
+
+</html>

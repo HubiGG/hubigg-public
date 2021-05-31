@@ -1,0 +1,650 @@
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('nexa-bold-webfont.woff2') format('woff2'), url('nexa-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: nexa_boldregular, Arial, Helvetica, sans-serif;
+    color: #eeba93;
+}
+
+*:not(input) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #1C292B;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(-45deg, #1C292B, #01191c);
+}
+
+button {
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    text-shadow: 0.2rem 0.2rem 0.5rem black;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 4rem;
+    white-space: pre;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+div::-webkit-scrollbar, div::-webkit-scrollbar-thumb {
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
+
+div::-webkit-scrollbar {
+    background-image: linear-gradient(45deg, #1C292B, #01191c);
+}
+
+div::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #da6b44, #eeba93);
+}
+
+div::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to top, #eeba93, #f4dcca);
+}
+
+/* Firefox */
+
+div {
+    scrollbar-color: #da6b44 #1C292B;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    display: block;
+    width: calc(100% - 2rem);
+    max-width: 40rem;
+    height: 3rem;
+    margin: 1.5rem auto 0 auto;
+    padding: 0 0.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: initial;
+}
+
+input[type="submit"], #teamCreation button {
+    display: block;
+    width: 10rem;
+    margin: 1.5rem auto;
+    text-align: center;
+    text-indent: 0;
+    cursor: pointer;
+}
+
+#mainHeader {
+    display: inline-block;
+    margin-top: 4em;
+}
+
+#mainHeader li {
+    display: inline-block;
+    padding: 0;
+    padding-right: 1rem;
+}
+
+#startTime {
+    display: block;
+    padding-top: 0.3125em;
+    white-space: pre;
+    color: white;
+    cursor: text;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* button templates */
+
+.orange, .blue, .gray {
+    display: block;
+    width: 18rem;
+    height: 2.75rem;
+    margin: auto;
+    border-radius: 0.75rem;
+    outline: none;
+    border-width: 0.25rem;
+    text-align: left;
+    text-indent: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.orange:hover, .blue:hover, .gray:hover {
+    box-shadow: 0 0 0.75rem black;
+}
+
+.orange:active, .blue:active, .gray:active {
+    box-shadow: inset 0 0 0.75rem black;
+}
+
+.orange {
+    background-image: linear-gradient(to right, #da6b44, #b35230);
+    border-color: #eeba93;
+}
+
+.orange:hover, .orange:hover p {
+    color: #f4dcca;
+    border-color: #f4dcca;
+}
+
+.blue *, .blue {
+    color: #72c9ed;
+}
+
+.blue {
+    background-image: linear-gradient(to right, #317d9c, #0b374c);
+    border-color: #72c9ed;
+}
+
+.blue:hover, .blue:hover * {
+    color: #abe7f2;
+    border-color: #abe7f2;
+}
+
+.gray {
+    background-image: linear-gradient(to right, #666666, #737373);
+    border-color: #dadada;
+}
+
+.gray p, .gray {
+    color: #dadada;
+}
+
+.gray:hover, .gray:hover p {
+    color: white;
+    border-color: white;
+}
+
+/* sidebar */
+
+#logo {
+    display: block;
+    width: calc(100% - 0.5rem);
+    margin: 0 0.25rem;
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    width: 14em;
+    height: 100%;
+    background-image: linear-gradient(-45deg, #324a4e, #1C292B);
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-right: solid;
+    border-color: black;
+}
+
+#logoutImg {
+    width: 10%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+#logoutText {
+    width: 100%;
+    margin-right: 10%;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+#logoutButton {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: 0.6em;
+}
+
+#steamProfilePicture {
+    height: 3rem;
+    width: 3em;
+    margin-left: 0.5rem;
+    vertical-align: bottom;
+}
+
+#steamProfileName {
+    display: inline-block;
+    width: calc(100% - 5rem);
+    height: 3rem;
+    margin: 0 0.5rem;
+    vertical-align: 0.75rem;
+    cursor: default;
+}
+
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+#sidebar li {
+    padding: 0.5em 0;
+}
+
+#sidebar li .orange, #sidebar li .blue, #sidebar li .gray {
+    width: 92.5%;
+}
+
+#login {
+    position: absolute;
+    width: inherit;
+    bottom: 0;
+}
+
+#login a {
+    display: inline-block;
+}
+
+#login img.landscape {
+    width: calc(100% - 1em);
+    height: auto;
+    margin: 0 0.5em;
+}
+
+#login img.portrait {
+    width: 2rem;
+    height: auto;
+    margin: 0 0.25em;
+    padding: 0.25em;
+    background-color: #72c9ed;
+    border-radius: 0.75rem;
+    border-color: #0b374c;
+    border-width: 0.25rem;
+    border-style: outset;
+}
+
+#login img.portrait:hover {
+    background-color: #abe7f2;
+}
+
+/* links */
+
+.social {
+    width: 3.6em;
+    height: 3.6em;
+    float: right;
+}
+
+.social:hover {
+    width: 3.4em;
+    height: 3.4em;
+    padding: 0.1em;
+    opacity: 0.75;
+}
+
+#links {
+    position: static;
+    width: 18em;
+    max-width: calc(100% - 4em);
+    margin-left: calc(100% - 18em);
+}
+
+#links a:first-child img {
+    color: #406da2;
+}
+
+#links a:nth-child(2) img {
+    color: deeppink;
+}
+
+#links a:nth-child(3) img {
+    color: #6441a5
+}
+
+#links a:nth-child(4) img {
+    color: #00acee;
+}
+
+#links a:nth-child(5) img {
+    color: #FF0000;
+}
+
+/* tournament contents */
+
+#tournament {
+    width: calc(100% - 14em);
+    max-height: 100%;
+    margin-left: 14em;
+}
+
+.overlayBackground {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.75;
+}
+
+/* server feedback */
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.serverFeedback {
+    display: block;
+    position: fixed;
+    width: 20rem;
+    top: 10%;
+    left: calc(50% - 10rem - 7rem - 0.5rem - 0.2rem);
+    margin-left: 14rem;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    align-content: space-between;
+    z-index: 3;
+    border: solid;
+    border-width: 0.2rem;
+    border-color: #858585;
+    background-color: #1C292B;
+    box-shadow: 0 0 1rem black;
+    animation-name: fadeOut;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+}
+
+.serverFeedback img {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.serverFeedback p {
+    display: inline-block;
+    width: calc(100% - 5rem);
+    font-size: 1.5rem;
+    cursor: default;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* confirmation */
+
+.confirmationBox {
+    display: block;
+    position: fixed;
+    width: 20rem;
+    top: 10vh;
+    left: calc(50vw - 10rem - 7rem - 0.5rem - 0.2rem);
+    margin-left: 14rem;
+    padding: 0.5rem;
+    z-index: 5;
+    align-content: space-between;
+    border-radius: 0.75rem;
+    background-color: #1C292B;
+    border: solid;
+    border-width: 0.2rem;
+    border-color: #858585;
+}
+
+.confirmationBox p {
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    min-height: 4.5rem;
+    white-space: pre-line;
+}
+
+.confirmationBox button {
+    width: 8rem;
+    height: 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    text-shadow: 0 0 0.5rem black;
+}
+
+.confirmationBox button:hover {
+    box-shadow: 0 0 0.75rem black;
+}
+
+.confirmationBox button:active {
+    box-shadow: inset 0 0 0.75rem black;
+}
+
+.confirmationActionButtonWaiting {
+    float: left;
+    background-color: darkgreen;
+    border-color: black;
+    color: black;
+}
+
+.confirmationActionButtonClickable {
+    float: left;
+    background-color: darkgreen;
+    border-color: limegreen;
+    color: white;
+}
+
+.confirmationCancelButton {
+    float: right;
+    background-color: darkred;
+    border-color: red;
+    color: white;
+}
+
+/* other */
+
+.portrait {
+    display: none;
+}
+
+#languages * {
+    width: 4rem;
+    height: 2.4rem;
+    text-align: center;
+    float: left;
+    padding: 0.5rem 0;
+}
+
+#languages div {
+    margin: 0 0.5rem;
+
+    cursor: pointer;
+    border-radius: 0.75rem;
+}
+
+#languages img {
+    width: calc(100% - 1.5rem);
+    height: auto;
+    margin: 0.45rem 0.75rem;
+    padding: 0;
+}
+
+#languages div:hover {
+    background-color: #1C292B;
+}
+
+#languages div:active {
+    box-shadow: inset 0 0 1rem black;
+}
+
+#languages h4 {
+    line-height: 1.5;
+}
+
+/* deprecated */
+
+#deprecated {
+    position: relative;
+    left: 14rem;
+    width: calc(100vw - 14rem);
+    height: 7rem;
+}
+
+#deprecated * {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 1rem 1rem 0 1rem;
+    text-align: center;
+}
+
+#deprecated p {
+    font-size: 1.25rem;
+    max-height: 4rem;
+}
+
+#deprecated a {
+    color: #72c9ed;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    max-height: 2rem;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#deprecated a:hover {
+    color: #abe7f2;
+}
+
+:root {
+    --depHeight: 8rem;
+}
+
+/* scaling */
+
+@media screen and (min-width: 45em) and (max-height: 34.5rem) {
+    #login {
+        position: static;
+        width: inherit;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 45em) and (max-height: 34.5em) {
+    #login {
+        position: static;
+        width: inherit;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 65em) {
+    h2 {
+        white-space: initial;
+    }
+    .serverFeedback {
+        left: calc(50% - 11.4rem);
+        margin-left: 0;
+    }
+    .confirmationBox {
+        left: calc(50vw - 11.4rem);
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    #sidebar {
+        width: 4rem;
+        height: 100%;
+    }
+    #deprecated {
+        left: 4rem;
+        width: calc(100vw - 4rem);
+    }
+    #sidebar li {
+        padding: 0.5em 0;
+    }
+    #sidebar li .orange, #sidebar li .gray, #sidebar li .blue {
+        width: 3rem;
+        height: 3rem;
+    }
+    #tournament {
+        width: calc(100% - 4rem);
+        margin-left: 4rem;
+    }
+    .portrait {
+        display: block;
+        text-align: center;
+        text-indent: 0;
+        font-size: 1.5rem;
+    }
+    .landscape {
+        display: none;
+    }
+    #steamProfileName {
+        display: none;
+    }
+    #logoutImg {
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        padding-left: 0.25rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+    #steamProfilePicture {
+        margin: 0 auto;
+        display: block;
+    }
+    #languages div, #languages h4 {
+        width: 3.5rem;
+        height: 2.1rem;
+        margin: 0 0.25rem;
+    }
+
+    #deprecated p {
+        font-size: 1rem;
+    }
+    
+    #deprecated a {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 22em) {
+    #links {
+        margin-left: 4rem;
+    }
+}
