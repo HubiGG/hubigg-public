@@ -38,11 +38,6 @@ let SearchContent = [
         fi: "Tietosuojakäytäntö",
         en: "Privacy policy",
         href: "privacy.html"
-    },
-    {
-        fi: "Palvelut",
-        en: "Services",
-        href: "services.html"
     }
 ]
 

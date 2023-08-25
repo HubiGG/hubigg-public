@@ -2,30 +2,30 @@
 
 const TOURNAMENT = {
     prizePool: {
-        fi: "",
-        en: ""
+        fi: "100 €",
+        en: "100 €"
     },
     entryFee: 0,
 
-    startDate: "",
-    endDate: "",
-    startTime: "",
+    startDate: "2023-09-16",
+    endDate: "2023-09-17",
+    startTime: "18:00",
 
     openSignUp: true,
-    signUpStartDate: "",
-    signUpStartTime: "",
+    signUpStartDate: "2023-09-01",
+    signUpStartTime: "18:00",
 
-    name: "HubiGG ? Cup",
+    name: "HubiGG Farewell CS:GO Cup",
 
-    tournamentImageSrc: "",
+    tournamentImageSrc: "images/farewell.jpg",
 
-    sponsor: "Amphis Gaming ry",
+    sponsor: "",
+    sponsorImgSrc: "",
+    sponsorLink: "",
     withSponsor: {
-        fi: "Amphis Gaming ry",
-        en: "Amphis Gaming ry"
+        fi: "",
+        en: ""
     },
-    sponsorImgSrc: "images/amphis.png",
-    sponsorLink: "https://instagram.com/AmphisGG",
 
     previous: {
         prizePool: {
@@ -56,9 +56,9 @@ const TOURNAMENT = {
     },
 
     newsImageSrc: "images/newsImg.jpg",
-    newsLink: "https://twitter.com/HubiGG/status/1348649400931856385",
-    giveawayImageSrc: "images/servicesNew.jpg",
-    giveawayLink: "services.html"
+    newsLink: "https://twitter.com/HubiGG",
+    giveawayImageSrc: "",
+    giveawayLink: ""
 }
 
 // onko striimi päällä (hakee automaattisesti, ei tarvitse muuttaa)
@@ -197,11 +197,6 @@ const LANG = {
     and: {
         fi: "ja",
         en: "and"
-    },
-
-    services: {
-        fi: "Palvelut",
-        en: "Services"
     }
 }
 
@@ -237,14 +232,13 @@ function UpdateLang() {
 
     UpdateLangStatic(document, IsLegacy, lang,);
 
-    const { search, signInToSteam, home, tournaments, services, signOut } = LANG;
+    const { search, signInToSteam, home, tournaments, signOut } = LANG;
 
     document.getElementById("languages").getElementsByTagName("p")[0].textContent = lang;
     document.getElementById("search").getElementsByTagName("input")[0].placeholder = search[lang];
 
     document.getElementById("links").getElementsByTagName("a")[0].innerHTML = home[lang];
     document.getElementById("links").getElementsByTagName("a")[1].innerHTML = tournaments[lang];
-    document.getElementById("links").getElementsByTagName("a")[2].innerHTML = services[lang];
 }
 
 function UpdateLangStatic(document, isLegacy, lang) {

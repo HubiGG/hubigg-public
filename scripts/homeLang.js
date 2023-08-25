@@ -151,7 +151,6 @@ function updateLangStatic(document, isLegacy, lang, { signUpForTournament, watch
 
         document.getElementById("spotlight").getElementsByTagName("h3")[0].textContent = spotlight[lang];
         document.getElementById("news").getElementsByTagName("h3")[0].textContent = news[lang];
-        document.getElementById("giveaway").getElementsByTagName("h3")[0].textContent = giveaway[lang];
 
         document.getElementById("socials").getElementsByTagName("h3")[0].textContent = checkSocials[lang];
 
@@ -159,11 +158,10 @@ function updateLangStatic(document, isLegacy, lang, { signUpForTournament, watch
         document.getElementById("tournamentLinks").getElementsByTagName("button")[1].textContent = tournaments[lang];
         document.getElementById("tournamentLinks").getElementsByTagName("button")[2].textContent = watchTournament[lang];
 
-        document.getElementById("giveaway").getElementsByTagName("button")[0].textContent = joinGiveaway[lang];
         document.getElementById("news").getElementsByTagName("button")[0].textContent = viewNews[lang];
 
         let sponsorText = "";
-        if (withSponsor[lang] != undefined) {
+        if (withSponsor[lang] != null && withSponsor[lang] != "") {
             sponsorText = `${sponsoredBy1[lang]} ${withSponsor[lang]} ${sponsoredBy2[lang]}`;
         }
 
@@ -187,8 +185,6 @@ function setupStatic(document, isLegacy, { sponsorImgSrc, sponsor, sponsorLink, 
 
         document.getElementById("news").getElementsByTagName("img")[0].src = newsImageSrc;
         document.getElementById("news").getElementsByTagName("a")[0].href = newsLink;
-        document.getElementById("giveaway").getElementsByTagName("img")[0].src = giveawayImageSrc;
-        document.getElementById("giveaway").getElementsByTagName("a")[0].href = giveawayLink;
     }
 }
 
