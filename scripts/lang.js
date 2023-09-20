@@ -2,22 +2,22 @@
 
 const TOURNAMENT = {
     prizePool: {
-        fi: "100 €",
-        en: "100 €"
+        fi: "",
+        en: ""
     },
     entryFee: 0,
 
-    startDate: "2023-09-16",
-    endDate: "2023-09-17",
-    startTime: "18:00",
+    startDate: "",
+    endDate: "",
+    startTime: "",
 
     openSignUp: true,
-    signUpStartDate: "2023-09-01",
-    signUpStartTime: "18:00",
+    signUpStartDate: "",
+    signUpStartTime: "",
 
-    name: "HubiGG Farewell CS:GO Cup",
+    name: "",
 
-    tournamentImageSrc: "images/farewell.jpg",
+    tournamentImageSrc: "",
 
     sponsor: "",
     sponsorImgSrc: "",
@@ -29,30 +29,30 @@ const TOURNAMENT = {
 
     previous: {
         prizePool: {
-            fi: 50,
-            en: 50
+            fi: 100,
+            en: 100
         },
         entryFee: 0,
     
-        startDate: "2021-05-14",
-        endDate: "2021-05-15",
+        startDate: "2023-09-16",
+        endDate: "2023-09-17",
         startTime: "18:00",
     
         openSignUp: true,
-        signUpStartDate: "2021-05-10",
-        signUpStartTime: "18:15",
+        signUpStartDate: "2023-09-01",
+        signUpStartTime: "18:00",
     
-        name: "HubiGG x Amphis Gaming Cup",
+        name: "HubiGG Farewell CS:GO Cup",
     
-        tournamentImageSrc: "images/amphisBanner.jpg",
+        tournamentImageSrc: "images/farewell.jpg",
     
-        sponsor: "Amphis Gaming ry",
+        sponsor: "",
         withSponsor: {
-            fi: "Amphis Gaming ry",
-            en: "Amphis Gaming ry"
+            fi: "",
+            en: ""
         },
-        sponsorImgSrc: "images/amphis.png",
-        sponsorLink: "https://instagram.com/AmphisGG",
+        sponsorImgSrc: "",
+        sponsorLink: "",
     },
 
     newsImageSrc: "images/newsImg.jpg",

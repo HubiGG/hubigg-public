@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="fi"><head>
+<html lang="fi">
+<head>
     <link rel="stylesheet" href="styles/newStyle.css">
     <link rel="stylesheet" href="styles/docStyle.css">
     <link rel="stylesheet" href="styles/tournamentStyle.css">
@@ -8,108 +9,113 @@
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <title>HubiGG - Suomalaista esports-toimintaa, CS:GO Turnauksia</title>
-    <meta name="description" content="HubiGG järjestää CS:GO-turnauksia ja muuta esports-toimintaa. 
+    <meta name="description" content="HubiGG järjestää CS:GO-turnauksia ja muuta esports-toimintaa.
     HubiGG hosts CS:GO-tournaments and other esports-activities.">
-    <meta name="keywords" content="hubigg, hubi, gg, fin, suomi, finland, cs, go, csgo, turnaus, turnaukset, tournament, hubigg.fi">
+    <meta name="keywords"
+          content="hubigg, hubi, gg, fin, suomi, finland, cs, go, csgo, turnaus, turnaukset, tournament, hubigg.fi">
 </head>
 
 <body>
-    <!-- top navigation bar -->
-    <div id="navBg"></div>
-    <div id="navBlur"></div>
-    <nav>
+<!-- top navigation bar -->
+<div id="navBg"></div>
+<div id="navBlur"></div>
+<nav>
         <span>
             <a href="index.html">
                 <img id="logo" src="images/hubiPNG.png" draggable="false" alt="HubiGG">
             </a>
             <div id="languages">
                 <img onclick="forceToFinnish()" src="images/fi.png" alt="fi">
-                <p>en</p>
+                <p>fi</p>
                 <img onclick="forceToEnglish()" src=" images/en.png" alt="en">
             </div>
             <div id="search">
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Haku">
             </div>
         </span>
 
-        <span>
+    <span>
             <div id="links">
-                <a href="index.html">Home</a>
-                <a href="tournaments.html">Tournaments</a>
+                <a href="index.html">Koti</a>
+                <a href="tournaments.html">Turnaukset</a>
             </div>
         </span>
 
-        <a class="faqLink" href="faq.html">FAQ</a>
-    </nav>
+    <a class="faqLink" href="faq.html">FAQ</a>
+</nav>
 
-    <!-- header -->
-    <header>
-        <div>
-            <h1>Tournaments</h1>
-        </div>
-    </header>
+<!-- header -->
+<header>
+    <div>
+        <h1>Turnaukset</h1>
+    </div>
+</header>
 
-    <main>
-        <h2 id="welcome">Upcoming tournaments</h2>
+<main>
+    <h2 id="welcome">Tulevat turnaukset</h2>
 
-        <section>
-            <article id="next">
-                <img class="tourneyImg" src="images/farewell.jpg" draggable="false" alt="HubiGG Farewell CS:GO Cup">
+    <section>
+        <article id="next">
+            <img class="tourneyImg" src="images/headingBg.jpg" draggable="false" alt="">
+            <div class="details">
+                <p></p>
+                <p></p>
+                <p>Päivämäärä ja aika: <span>TBA</span></p>
+                <p style="display: block;"></p>
+                <a href="/">
+                    <button class="greenBt" style="display: none;">Ilmoittaudu turnaukseen</button>
+                </a>
+            </div>
+        </article>
+
+        <div id="combined">
+            <article id="previous">
+                <h3>Päättyneet turnaukset</h3>
+                <img src="images/farewell.jpg" draggable="false" alt="HubiGG Farewell CS:GO Cup">
                 <div class="details">
-                    <p>Tournament: <span>HubiGG Farewell CS:GO Cup</span></p>
-                    <p>Prize: <span>100 €</span></p>
-                    <p>Date and time: <span>9/16/2023 - 9/17/2023, 18:00</span></p>
-                    <p style="display: block;">Sign up: <span>9/1/2023, 18:00</span></p>
+                    <p>Viimeksi pelattu turnaus:
+                        <span>HubiGG Farewell CS:GO Cup</span><span>16.9.2023 - 17.9.2023</span></p>
                     <a href="/">
-                        <button class="greenBt" style="display: none;">Sign up for the tournament</button>
+                        <button class="orangeBt">Turnaussivu</button>
                     </a>
+                    <a href="/">&gt;Katso kaikki päättyneet turnaukset</a>
                 </div>
             </article>
-
-            <div id="combined">
-                <article id="previous">
-                    <h3>Previous tournaments</h3>
-                    <img src="images/amphisBanner.jpg" draggable="false" alt="HubiGG x Amphis Gaming Cup">
-                    <div class="details">
-                        <p>Previous tournament: <span>HubiGG x Amphis Gaming Cup</span><span>5/14/2021 - 5/15/2021</span></p>
-                        <a href="/">
-                            <button class="orangeBt">Tournament page</button>
-                        </a>
-                        <a href="/">&gt;View all previous tournaments</a>
-                    </div>
-                </article>
-                <article id="questions">
-                    <h3>Questions about the tournament?</h3>
-                    <p>See frequently asked questions from down below or from the top navigation bar.
-        If you can't find your desired information, please contact the admins of HubiGG, for example, on our Discord-server.</p>
-                    <a href="faq.html">
-                        <button class="blueBt">FAQ</button>
-                    </a>
-                </article>
-            </div>
-
-            <article id="aboutTournaments">
-                <img src="images/hubiPNG_Large.png" draggable="false" alt="HubiGG">
-                <h3>About the tournaments</h3>
-                <div class="details">
-                    <p>Additional information about our tournaments can be found down below or from the navigation bar at the top.</p>
-                    <a href="index.html#about">
-                        <button class="blueBt">About us</button>
-                    </a>
-                </div>
+            <article id="questions">
+                <h3>Kysyttävää turnauksista?</h3>
+                <p>Katso alapuolelta tai yläpalkista useinten kysyttyjä kysymyksiä ja vastauksia.
+                    Jos et löydä tarvitsemaasi tietoa, otathan yhteyttä HubiGG:n ylläpitoon esimerkiksi
+                    Discord-palvelimellamme.</p>
+                <a href="faq.html">
+                    <button class="blueBt">FAQ</button>
+                </a>
             </article>
-        </section>
+        </div>
 
-        <!-- footer with info-->
-        <footer>
-            <div class="info">
-                <a href="privacy.html">Privacy policy and terms of use</a>
-                <p>©2021 HUBIGG ALL RIGHTS RESERVED</p>
+        <article id="aboutTournaments">
+            <img src="images/hubiPNG_Large.png" draggable="false" alt="HubiGG">
+            <h3>Tietoa turnauksista</h3>
+            <div class="details">
+                <p>Lisätietoa turnasten historiasta ja niiden järjestämisestä saat alapuolelta tai yläpalkista
+                    löytyvästä 'Tietoa meistä' osiosta.</p>
+                <a href="index.html#about">
+                    <button class="blueBt">Tietoa meistä</button>
+                </a>
             </div>
-        </footer>
-    </main>
-    <script src="scripts/lang.js"></script>
-    <script src="scripts/search.js"></script>
-    <script src="scripts/tournamentsLang.js"></script>
+        </article>
+    </section>
 
-</body></html>
+    <!-- footer with info-->
+    <footer>
+        <div class="info">
+            <a href="privacy.html">Tietosuoja ja käyttöehdot</a>
+            <p>©2021 HUBIGG ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+</main>
+<script src="scripts/lang.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/tournamentsLang.js"></script>
+
+</body>
+</html>

@@ -140,12 +140,10 @@ function updateLangStatic(document, isLegacy, lang, { signUpForTournament, watch
         document.getElementById("contacts").getElementsByTagName("h3")[0].textContent = contactUs[lang]
     }
     else {
-        const { subHeader, aboutUsDescription, contactUs, spotlight, news, giveaway, checkSocials, welcomeToNewSite, joinGiveaway, viewNews, sponsoredBy1, sponsoredBy2 } = homeLANG;
+        const { subHeader, aboutUsDescription, contactUs, spotlight, news, giveaway, checkSocials, joinGiveaway, viewNews, sponsoredBy1, sponsoredBy2 } = homeLANG;
 
         document.getElementById("about").innerHTML = aboutUsDescription[lang];
         document.getElementsByTagName("address")[0].getElementsByTagName("h4")[0].textContent = contactUs[lang];
-
-        document.getElementById("welcome").textContent = welcomeToNewSite[lang];
 
         document.getElementsByTagName("header")[0].getElementsByTagName("p")[0].textContent = subHeader[lang];
 
