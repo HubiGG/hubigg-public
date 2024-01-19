@@ -1,6 +1,7 @@
 /* header section */
 
 header {
+    position: relative;
     display: inline-block;
     width:  100%;
     height: 56.25vw;
@@ -23,7 +24,7 @@ header div {
     transform: translateY(-50%);
 }
 
-header h1, header p {
+header h1, header p{
     text-align: center;
 }
 
@@ -46,6 +47,25 @@ main {
     text-align: center;
     width: calc(100% - 2rem);
     margin: 0 1rem;
+}
+
+#discordLink {
+  margin: 3rem 0;
+}
+
+#discordLink button {
+  width: 18rem;
+  height: 3.5rem;
+  border-style: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: block;
+  margin: 1.75rem auto;
+  background-color: #bb5b37;
+}
+
+#discordLink button:hover {
+  text-shadow: white 0 0 2rem;
 }
 
 #welcome {

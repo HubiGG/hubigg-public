@@ -261,4 +261,7 @@ address p {
     #tournamentSponsor {
         width: 100%;
     }
+    #discordLink button {
+      width: 14rem;
+    }
 }
