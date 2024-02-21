@@ -12,7 +12,7 @@ const homeLANG = {
             <h3>Tietoa meistä</h3>
             <h4>Keitä olemme?</h4>
             <p> 
-            Olemme ryhmä lukioikäisiä kavereita, joilla on aina ollut kova intohimo pelaamista ja e-urheilua kohtaan. 
+            Olemme ryhmä kavereita, joilla on aina ollut kova intohimo pelaamista ja e-urheilua kohtaan. 
             HubiGG on itsenäisesti aloittamamme projekti, jonka parissa tavoitteenamme on sekä järjestää esports-turnauksia, että auttaa pelaajia löytämään uusia pelikavereita. 
             Meidät tunnetaan parhaiten pienimuotoisten CS:GO turnausten järjestämisestä, joihin käytetty raha ja produktio tulevat kokonaan omalta porukaltamme.
             </p>
@@ -36,7 +36,7 @@ const homeLANG = {
             <h3>About us</h3>
             <h4>Who are we?</h4>
             <p> 
-            We are a group of high school friends, that have always had a huge passion towards gaming and esports. 
+            We are a group of friends, that have always had a huge passion towards gaming and esports. 
             HubiGG is our independently started project, in which our target is to organise esports tournaments, and help gamers find new mates to play with. 
             We are best known as an organiser of smaller scale CS:GO tournaments, in which the money spent and the production come solely from our friend group.
             </p>
